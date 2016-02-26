@@ -2,12 +2,12 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'heroku'
+gem 'heroku', '~> 3.42', '>= 3.42.38'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 group :production do
-	gem 'pg'
+	gem 'pg', '~> 0.18.4'
 end
 
 group :development, :test do
