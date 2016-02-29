@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'sendgrid'
 gem 'figaro'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
