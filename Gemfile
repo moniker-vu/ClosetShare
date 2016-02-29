@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'figaro'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'heroku', '~> 3.42', '>= 3.42.38'
