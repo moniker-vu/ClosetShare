@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
+
 gem 'sendgrid'
 gem 'figaro'
-=======
->>>>>>> f3bee86a75aaed944bcf949412002c4e6c8c91f1
+
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'heroku', '~> 3.42', '>= 3.42.38'

@@ -29,11 +29,9 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-<<<<<<< HEAD
+
   config.assets.compile = false
-=======
-  config.assets.compile = true
->>>>>>> f3bee86a75aaed944bcf949412002c4e6c8c91f1
+
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
@@ -80,22 +78,20 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-<<<<<<< HEAD
+
   config.action_mailer.default_url_options = { host: 'closetshare1.herokuapp.com'}
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  :address => 'smtp.sendgrid.net',
-  :port: => "25",
-  :domain => "heroku.com", 
-  :authentication => plain,
-  :enable_starttls_auto: => true,
-  :user_name => ENV["SENDGRID_USERNAME"],
-  :password => ENV["SENDGRID_PASSWORD"]
+  :address 'smtp.sendgrid.net',
+  :port "25",
+  :domain "heroku.com", 
+  :authentication plain,
+  :enable_starttls_auto true,
+  :user_name ENV["SENDGRID_USERNAME"],
+  :password ENV["SENDGRID_PASSWORD"]
 }
 
-=======
->>>>>>> f3bee86a75aaed944bcf949412002c4e6c8c91f1
-end
+
