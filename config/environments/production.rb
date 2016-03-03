@@ -93,4 +93,5 @@ Rails.application.configure do
   #:user_name ENV["SENDGRID_USERNAME"],
   #:password ENV["SENDGRID_PASSWORD"]
   #}
+
 end

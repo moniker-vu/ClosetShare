@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'sendgrid', '~> 1.2', '>= 1.2.4'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
