@@ -17,17 +17,18 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">About us</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Window Shop</a>
                     </li>
                     <%- if current_user %>
+                   
                     <li>
                         <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
+                    </li>
+                    <li>
+                         <%= link_to "My Profile", new_profile_path(:id) %>
                     </li>
                     <% else %>
                     <li>
@@ -49,19 +50,11 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-<<<<<<< HEAD
-                <h1>SOPHIE'S SITE!!!</h1>
-                <p class="lead">This is how amazing she is!</p>
-                <ul class="list-unstyled">
-                    <li>nice</li>
-                    <li>beautiful</li>
-=======
                 <h1>Closet Share</h1>
                 <p class="lead">Browse someone else's closet!</p>
                 <ul class="list-unstyled">
                     <li>sub-heading 1 ?</li>
                     <li>sub-heading 2?</li>
->>>>>>> f3bee86a75aaed944bcf949412002c4e6c8c91f1
                 </ul>
             </div>
         </div>
