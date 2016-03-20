@@ -14,7 +14,7 @@ def show
 end
 
 def new
-	@profile = Profile.new
+	@profile = Profile.create(params[:user_id])
 	#put in a form(user input) onto web page
 	#once submit is clicked- it passes forward to 'create' action
 end
@@ -22,8 +22,10 @@ end
 def profile_params
 	params.require(:profile).permit(:first_name, :last_name, :about)
 end
+
+
 def create
-	@profile = Profile.new(profile_params)
+	@profile = current_user.profile.build(filtered_params)
 	if @profile.save
 		redirect_to profile_path(current_user.profile) if current_user.profile 
 	else
@@ -62,5 +64,10 @@ end
 
 #if we have another function we wanna make - we put it in helpers file
 #then we can use those functions in out controllers
+end
+
+private
+def filtered_params
+	params.require(:profile).permit(:user_id)
 end
 
